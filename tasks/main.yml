@@ -2,10 +2,9 @@
 # Variable configuration
 - import_tasks: variables.yml
 
-# Install RPM Fusion Repos (RedHat)
-- import_tasks: rpm_fusion_repo.yml
-  when: ansible_os_family == "Redhat"
-
+# Install Additional Repos
+- import_tasks: additional_repos.yml
+ 
 # Install multimedia applications and codecs
 - name: Install multimedia applications
   package:

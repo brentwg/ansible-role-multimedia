@@ -1,4 +1,10 @@
 ---
+- name: Install EPEL (RedHat)
+  package:
+    name: "epel-release"
+    state: present
+  when: ansible_os_family == "Redhat"
+
 - name: Install RPM Fusion Repos (Fedora)
   dnf:
     name: "{{ item }}"
