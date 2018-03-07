@@ -11,6 +11,5 @@ multimedia_codec_packages:
   - gstreamer1-plugins-ugly 
   - gstreamer-plugins-good-extras 
   - gstreamer1-plugins-good-extras 
-  - gstreamer1-plugins-bad-freeworld 
-  - ffmpeg 
+  - gstreamer1-plugins-bad-freeworld  
   - gstreamer-ffmpeg

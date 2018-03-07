@@ -9,9 +9,7 @@ multimedia_codec_packages:
   - gstreamer-plugins-bad 
   - gstreamer-plugins-ugly 
   - gstreamer1-plugins-ugly 
-  - gstreamer-plugins-good-extras 
-  - gstreamer1-plugins-good-extras 
   - gstreamer1-plugins-bad-freeworld 
-  - ffmpeg 
+  - gstreamer-plugins-bad-nonfree 
   - gstreamer-ffmpeg
 

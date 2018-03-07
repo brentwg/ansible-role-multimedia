@@ -1,4 +1,5 @@
 ---
 multimedia_application_packages:
   - vlc
+  - ffmpeg
   
