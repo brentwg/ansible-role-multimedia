@@ -1,0 +1,9 @@
+---
+# Variable configuration
+- import_tasks: variables.yml
+
+# Install multimedia codecs
+- import_tasks: multimedia_codecs.yml
+
+# Install multimedia applications
+- import_tasks: multimedia_applications.yml

@@ -1,0 +1,20 @@
+---
+- name: Install RPM Fusion Repos (Fedora)
+  dnf:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ rpm_fusion_repos }}"
+  when: ansible_distribution == 'Fedora'
+
+- name: Install RPM Fusion Repos (CentOS)
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ rpm_fusion_repos }}"
+  when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
+
+- name: Install multimedia codecs
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ multimedia_codec_packages }}"
