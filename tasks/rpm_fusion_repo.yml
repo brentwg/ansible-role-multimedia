@@ -12,9 +12,3 @@
     state: present
   with_items: "{{ rpm_fusion_repos }}"
   when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
-
-- name: Install multimedia codecs
-  package:
-    name: "{{ item }}"
-    state: present
-  with_items: "{{ multimedia_codec_packages }}"

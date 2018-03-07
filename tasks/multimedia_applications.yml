@@ -1,6 +1,0 @@
----
-- name: Install multimedia applications
-  package:
-    name: "{{ item }}"
-    state: present
-  with_items: "{{ multimedia_application_packages }}"

@@ -3,7 +3,7 @@ dependencies: []
 
 galaxy_info:
   author: brentwg
-  description: Ansible role that installs useful multimedia codecs and applications.
+  description: Ansible role that installs useful multimedia applications and codecs.
   company: "None"
   license: "None"
   min_ansible_version: 2.4
