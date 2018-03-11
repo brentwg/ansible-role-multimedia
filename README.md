@@ -27,7 +27,7 @@ Listing of RPMs or APT packages for multimedia codecs that you wish to add.
 
 ## Dependencies
 
-TODO
+None.
 
 ## Sample Playbook
 ```
