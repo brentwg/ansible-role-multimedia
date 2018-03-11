@@ -19,5 +19,11 @@ script:
   # Run tests
   - ${PWD}/tests/test.sh
 
+  # Check vlc version
+  - docker exec --tty $container_id env TERM=xterm vlc --version
+
+  # Check ffmpeg version
+  - docker exec --tty $container_id env TERM=xterm ffmpeg -version
+
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
