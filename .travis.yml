@@ -20,8 +20,8 @@ script:
   - ${PWD}/tests/test.sh
 
   # Check vlc version
-  - docker exec --tty $container_id env TERM=xterm vlc --version
-
+  - docker exec --tty $container_id env TERM=xterm sudo -H -u brentwg bash -c 'vlc --version'
+ 
   # Check ffmpeg version
   - docker exec --tty $container_id env TERM=xterm ffmpeg -version
 
